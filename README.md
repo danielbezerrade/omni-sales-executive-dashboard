@@ -10,7 +10,7 @@ Design e Layout (PowerPoint): Todo o design de fundo e a disposição dos cartõ
 
 Modelagem & DAX: Estruturação em Star Schema e utilização de fórmulas DAX para calcular KPIs de faturamento, margem de lucro e um ranking dinâmico com a função RANKX (Top 10 Produtos).
 
-Data/Hora Dinâmica de Atualização: Criação de uma consulta no Power Query utilizando DateTime.LocalNow(). Com isso, toda vez que o Power BI atualiza, o relatório mostra o horário exato da última atualização.
+Data/Hora Dinâmica de Atualização: Criação de uma consulta no Power Query utilizando DateTimeZone.RemoveZone(DateTimeZone.SwitchZone(DateTimeZone.UtcNow(),-3)). Com isso, toda vez que o Power BI atualiza, o relatório mostra o horário exato da última atualização.
 
 📌 Estrutura do Painel
 
